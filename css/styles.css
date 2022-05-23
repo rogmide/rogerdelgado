@@ -36,7 +36,24 @@ all of these add on top of the width and height
 
   /*background img*/
   background-size: 10px;    
+  background-image: url(../img/background.JPG);
   
+}
+
+.box1 {
+  background-color: aquamarine;
+  width: 600px;
+  margin: 100px;
+  
+  border: 10px solid red;
+  border-left: 15px solid #3747b3;
+  border-bottom: 10px solid #a7dbe3;
+  border-right: 0px;
+  border-top: 10px solid #a7dbe3;  
+  padding: 0px 15px 0px 15px; /*top right bottom left*/  
+
+  /*background img*/
+  background-size: 10px;      
 }
 
 div {
