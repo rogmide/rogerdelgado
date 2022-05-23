@@ -69,9 +69,9 @@ all of these add on top of the width and height
   background-size: 10px;      
 }
 
-div {  
+/*div {  
   background-image: url(../img/more-leaves-on-green.png);
-}
+}*/
 
 p {
   color: rgb(48, 31, 5);
@@ -120,3 +120,25 @@ a {
 a:hover, a:focus {
   color: rgb(0, 139, 125);
 }
+
+.body-text {
+  background-color: azure; 
+  padding: 10px;
+}
+
+.body-text p {
+  color: red;
+}
+
+.body-text a {
+  color: blue;
+}
+
+.body-text a:hover {
+  color: brown;
+}
+
+.important-link, .body-text .important-link {
+  color: yellow;  
+}
+
