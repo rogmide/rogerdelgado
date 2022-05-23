@@ -3,16 +3,29 @@ body {
   background-image: url(../img/more-leaves-on-green.png);
   color: white;
   font-size: 21px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+h1 {  
+  font-size: 15px;
+  margin-top: 0px;
+  color: #3747b3;
+  font-style: italic;
 }
 
 .title {
   font-size: 40px;
-  color: brown;
+  color: brown;  
+  font-family: "Courier Bold", Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 0px;
+  font-style: normal;  
 }
 
-h1 {  
-  font-size: 15px;
-  color: #3747b3;
+h2 {  
+  font-size: 25px;
+  color: blueviolet;
 }
 /*the CSS box model
 
@@ -57,18 +70,37 @@ all of these add on top of the width and height
 }
 
 div {
-  width: 300px;
-  background-color: aquamarine;
+  width: 1000px;
+  background-image: url(../img/more-leaves-on-green.png);
 }
 
 p {
-  color: cadetblue;
+  color: rgb(48, 31, 5);
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+
+  font-size: 20px;
+  font-style: lighter;
+  text-align: left;  
 }
 
 span {
-  color: blue;
-  font-size: larger;
+  color: rgb(48, 31, 5);  
 }
+
+.bolder {
+  font-weight: bolder;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+  text-decoration: overline;
+}
+
+
 /* . DOT(.) is how you call the class */
 .top-section {
   background-color: azure;
@@ -80,4 +112,12 @@ span {
 
 .introtext {
   font-size: 30px;
+}
+
+a {
+  color: darkslategrey;
+}
+
+a:hover, a:focus {
+  color: rgb(0, 139, 125);
 }
