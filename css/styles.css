@@ -10,30 +10,28 @@ header {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  color: #FFF;
+  color: rgb(209, 228, 221);
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .title {
   font-weight: 100;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
+
 
 section {
-  width: 70%;
+  width: 53%;
   float: left;
   margin-bottom: 50px;
 }
 
-aside {
-  float: right;
-  width: 25%;
-}
+
 
 footer {
   clear: both;
@@ -52,6 +50,7 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 1;
   margin: 0 auto;
+  clear: both;
 }
 
 .myLink {
@@ -64,7 +63,87 @@ footer {
   margin-bottom: 50px;
 }
 
-.myPic {
-  width: 100px;
-  height: 100px;
+
+
+.box {
+  width: 80%;  
+  margin-left: auto;
+  margin-right: auto;
+  
 }
+
+.box1 {
+  background: #59594A;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;  
+}
+
+.box2 {
+  margin-left: 10px;
+  background: #59594A;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+.box3 {
+  margin-left: 10px;
+  background: #59594A;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+.myPic {
+  width: 200px;
+  height: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  padding-bottom: 10px;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 1;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 1;
+  text-align: left;
+  font-size: 15px;
+  color: #CDE7B0;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.newtitle{
+  margin-top: 2px;  
+  margin-bottom: 2px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+}
+
+aside {
+  float: right;    
+  padding-right: 10px;
+}
+
+aside div{
+  padding: 2px; 
+  margin-top: 10px;
+  background: #545e6b;
+}
+
