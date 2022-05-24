@@ -12,10 +12,7 @@ header {
   text-align: center;
   color: #FFF;
   text-transform: uppercase;
-  margin-bottom: 100px;
-  size: 46px;
-  line-height: 0px;
-  letter-spacing: 0.6em;  
+  margin-bottom: 50px;  
 }
 
 .title {
@@ -24,13 +21,13 @@ header {
 
 .container {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 
 section {
   width: 70%;
   float: left;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 aside {
@@ -44,6 +41,16 @@ footer{
   padding: 50px 0;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+.insideheader {
+  background-color: #59594A;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1;
+  margin: 0 auto;
 }
 
