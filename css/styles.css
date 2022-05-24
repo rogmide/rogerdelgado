@@ -1,3 +1,36 @@
 body {
-  background: magenta;
+  background: #CDE7B0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
 }
+
+header {
+  background-color: #59594A;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  width: 70%;
+  float: left;
+}
+
+aside {
+  float: right;
+  width: 25%;
+}
+
+footer{
+  clear: both;
+  background-color: #7286A0;
+}
+
