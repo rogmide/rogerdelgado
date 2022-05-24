@@ -12,6 +12,14 @@ header {
   text-align: center;
   color: #FFF;
   text-transform: uppercase;
+  margin-bottom: 100px;
+  size: 46px;
+  line-height: 0px;
+  letter-spacing: 0.6em;  
+}
+
+.title {
+  font-weight: 100;
 }
 
 .container {
@@ -22,6 +30,7 @@ header {
 section {
   width: 70%;
   float: left;
+  margin-bottom: 100px;
 }
 
 aside {
@@ -32,5 +41,9 @@ aside {
 footer{
   clear: both;
   background-color: #7286A0;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 100px;
 }
 
