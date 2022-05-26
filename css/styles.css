@@ -60,7 +60,7 @@ ul {
 .navbar a {
     color: white;
     text-decoration: none;
-    font-size: 10px;    
+    font-size: 10px;
 }
 
 a:hover {
@@ -132,6 +132,24 @@ a:hover {
         display: block;
         text-align: center;
     }
+
+    .navbar .container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        margin-bottom: 10px;
+    }
+
+    .buttom1 {
+        margin-bottom: 10px;
+    }
 }
 
 .but1 {
@@ -187,6 +205,6 @@ a:hover {
     height: 30px;
 }
 
-.but2 button{
+.but2 button {
     font-size: 10px;
 }
