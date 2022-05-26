@@ -26,8 +26,7 @@ h2 {
 
 .container {
     max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 30px;
+    margin: 0 auto;    
 }
 
 .navbar {
@@ -156,6 +155,12 @@ a:hover {
         text-align: center;
     }
 
+    .boxes2 .mainBox1{
+        display: flex;        
+        flex-direction: column;
+        text-align: center;        
+    }
+
     .logo {
         margin-bottom: 10px;
     }
@@ -266,8 +271,11 @@ a:hover {
 
 .boxes2 {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: column;    
+    max-width: 1140px;
+    margin: 0 auto;
+    
 }
 
 .skills {
