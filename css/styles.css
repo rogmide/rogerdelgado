@@ -147,8 +147,7 @@ a:hover {
     .boxes .container {
         display: block;
         text-align: center;
-    }
-
+    } 
 
     .navbar .container {
         display: flex;
@@ -168,6 +167,20 @@ a:hover {
     .buttom1 {
         margin-bottom: 10px;
     }
+}
+
+@media(max-width: 600px) {
+    .boxes1 .mainbox {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+        display: block;
+    }
+    
+    .boxes1 .containerLogo {
+        display: block;
+        text-align: center;
+    } 
 }
 
 .but1 {
@@ -196,6 +209,7 @@ a:hover {
     display: flex;
     margin-top: 20px;
     align-items: center;
+    
 }
 
 .but2video h3 {
@@ -247,14 +261,13 @@ a:hover {
 }
 
 .mainbox p {
-    width: 450px;
+    
     font-size: 12px;
     text-align: center;
 }
 
 .containerLogo {
-    display: flex;
-    width: 500px;
+    display: flex;    
     margin-top: 30px;
     flex-wrap: wrap;
 }
