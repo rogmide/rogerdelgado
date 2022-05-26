@@ -33,7 +33,6 @@ h2 {
             rgb(96, 3, 150));
     background-size: 200%;
     color: white;
-    height: 60px;
 }
 
 ul {
@@ -122,6 +121,13 @@ a:hover {
     padding: 15px 20px;
 }
 
+@media(min-width: 600px) {
+    .navbar {
+        height: 60px;    
+    }
+}
+
+
 @media(max-width: 600px) {
     .header .container {
         flex-direction: column;
@@ -134,11 +140,12 @@ a:hover {
         text-align: center;
     }
 
+
     .navbar .container {
         display: flex;
         flex-direction: column;
         padding-top: 20px;
-        text-align: center;
+        text-align: center;        
     }
 
     .logo {
