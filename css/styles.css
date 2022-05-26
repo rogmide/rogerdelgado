@@ -143,7 +143,7 @@ a:hover {
         padding-top: 20px;
         text-align: center;
     }
-
+    
     .boxes .container {
         display: block;
         text-align: center;
@@ -228,6 +228,12 @@ a:hover {
     font-size: 10px;
 }
 
+.boxes1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .mainbox {
     display: flex;
     flex-direction: column;
@@ -241,21 +247,20 @@ a:hover {
 }
 
 .mainbox p {
-    display: flex;
     width: 450px;
     font-size: 12px;
     text-align: center;
 }
 
-.containerLogo {    
-    display: flex;        
-    flex-wrap: wrap;
-    justify-content: space-around;
+.containerLogo {
+    display: flex;
+    width: 500px;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .containerLogo img {
+    margin: 0 10px;
     width: 80px;
     height: auto;
 }
-
