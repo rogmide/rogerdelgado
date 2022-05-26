@@ -60,8 +60,7 @@ ul {
 .navbar a {
     color: white;
     text-decoration: none;
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 10px;    
 }
 
 a:hover {
@@ -186,4 +185,8 @@ a:hover {
 .IconPlayVideo img {
     width: 30px;
     height: 30px;
+}
+
+.but2 button{
+    font-size: 10px;
 }
