@@ -4,6 +4,40 @@
     padding: 0;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 90vw;
+    width: 100%;
+}
+
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+@media (min-width: 993px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
 html {
     font-size: calc(1em + 0.5vw);
 }
@@ -24,11 +58,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-.container {
-    max-width: 1140px;
-    margin: 0 auto;    
-}
-
 .navbar {
     background-color: rgb(154, 52, 238);
     background: linear-gradient(129deg,
@@ -43,7 +72,7 @@ ul {
 }
 
 .navbar .logo {
-    font-size: 10pxpx;
+    font-size: 20px;
     font-weight: lighter;
 }
 
@@ -143,8 +172,7 @@ a:hover {
         text-align: center;
     }
 
-    .boxes .container {
-        display: block;
+    .boxes .container {        
         text-align: center;
     }
 
@@ -155,10 +183,10 @@ a:hover {
         text-align: center;
     }
 
-    .boxes2 .mainBox1{
-        display: flex;        
+    .boxes2 .mainBox1 {
+        display: flex;
         flex-direction: column;
-        text-align: center;        
+        text-align: center;
     }
 
     .logo {
@@ -272,10 +300,10 @@ a:hover {
 .boxes2 {
     display: flex;
     align-items: flex-start;
-    flex-direction: column;    
+    flex-direction: column;
     max-width: 1140px;
     margin: 0 auto;
-    
+
 }
 
 .skills {

@@ -1,0 +1,27 @@
+.container {
+    margin: 0 auto;
+    max-width: 90vw;
+    width: 100%;
+  }
+  .container:before, .container:after {
+    content: " ";
+    display: table;
+  }
+  .container:after {
+    clear: both;
+  }
+  @media (min-width: 993px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1201px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  @media (min-width: 1601px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
