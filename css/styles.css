@@ -21,7 +21,7 @@ h2 {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -89,7 +89,7 @@ a:hover {
 }
 
 .header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 1.2;
 }
@@ -186,6 +186,7 @@ a:hover {
 .but2video {
     display: flex;
     margin-top: 20px;
+    align-items: center;
 }
 
 .but2video h3 {
