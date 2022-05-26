@@ -10,16 +10,6 @@
     width: 100%;
 }
 
-.container:before,
-.container:after {
-    content: " ";
-    display: table;
-}
-
-.container:after {
-    clear: both;
-}
-
 @media (min-width: 993px) {
     .container {
         max-width: 960px;
