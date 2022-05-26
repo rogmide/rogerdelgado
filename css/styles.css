@@ -290,8 +290,13 @@ a:hover {
 
 .containerLogo {
     display: flex;
-    margin-top: 30px;
     flex-wrap: wrap;
+    margin-top: 30px;    
+}
+
+.boxLogo {
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .containerLogo img {
