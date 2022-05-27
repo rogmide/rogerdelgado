@@ -177,6 +177,21 @@ a:hover {
     }
 }
 
+@media(max-width: 1070px) {
+    .holder-back-color .container {
+        margin-top: 60px;
+        display: flex;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+    }
+
+    .my-dudes {
+        margin-bottom: 60px;
+    }
+
+}
+
+
 @media(max-width: 600px) {
     .header .container {
         flex-direction: column;
@@ -235,9 +250,10 @@ a:hover {
         margin-bottom: 10px;
     }
 
-    .boxLogo h2{
+    .boxLogo h2 {
         margin-bottom: 25px;
     }
+
     .boxLogo p {
         margin-bottom: 25px;
     }
@@ -344,7 +360,7 @@ a:hover {
 
 .mainbox p {
     font-size: 12px;
-    text-align: center;    
+    text-align: center;
 }
 
 .containerLogo {
@@ -411,7 +427,8 @@ a:hover {
 
 .p-for-max {
     max-width: 500px;
-    }
+}
+
 .mainbox p {
     font-size: 16px;
 }
@@ -429,6 +446,7 @@ p {
     display: flex;
     max-width: 1140px;
     align-items: center;
+    padding-bottom: 60px;
 }
 
 .price1 {
@@ -487,4 +505,84 @@ footer {
     text-align: center;
     margin-top: 0px;
     color: white;
+}
+
+.backcolor {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(22, 14, 86, 0.1);
+}
+
+.holder-back-color {
+    background: rgb(255, 231, 231);
+    background: linear-gradient(90deg, rgba(255, 231, 231, 1) 0%, rgba(213, 248, 255, 1) 100%);
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 30px;
+}
+
+.topcolor {
+    height: 200px;
+    width: 350px;
+    background-color: rgb(154, 52, 238);
+    background: linear-gradient(129deg,
+            rgb(5, 49, 119),
+            rgb(96, 3, 150));
+    background-size: 200%;
+    position: absolute;
+}
+
+.topcolor p {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.bottomcolor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 350px;
+    height: 360px;
+}
+
+.bottomcolor h2 {
+    z-index: 1;
+}
+
+.my-ref {
+    width: 100px;
+    height: 110px;
+    z-index: 1;
+}
+
+.name-ref {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.star-ref {
+    color: #fe9c0b;
+    margin-bottom: 0;
+}
+
+.status-ref {
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: bolder;
+    border-bottom: 1px solid rgba(5, 49, 119, 0.3);
+    margin-bottom: 40px;
+}
+
+.holder-back-color .container {
+    display: flex;
+    justify-content: space-around;
 }
