@@ -175,6 +175,38 @@ a:hover {
     .price3 {
         margin-bottom: 15px;
     }
+
+    .contactus {
+        margin-top: 60px;
+        display: flex;
+
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+    }
+
+    .contactimg {
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width: 700px) {
+    .holder-back-color .container {
+        margin-top: 60px;
+        display: flex;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+    }
+
+    .my-dudes {
+        margin-bottom: 60px;
+    }
+
+    .containerLogo .icon-logo {
+        margin-top: 60px;
+        display: flex;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+    }
 }
 
 @media(max-width: 1070px) {
@@ -188,7 +220,6 @@ a:hover {
     .my-dudes {
         margin-bottom: 60px;
     }
-
 }
 
 
@@ -589,7 +620,7 @@ footer {
 
 .holder-back-color .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .but3 {
@@ -607,10 +638,14 @@ footer {
     justify-content: space-between;
 }
 
+.p-for-max {
+    max-width: 700px;
+}
+
 .contactimg {
-    margin-right: 150px;
     height: 250px;
-    width: 350px;
+    width: auto;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(22, 14, 86, 0.7);
+    margin-bottom: 60px;
 }
