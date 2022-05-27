@@ -453,3 +453,16 @@ a:hover {
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
+footer {
+    background-color: rgb(154, 52, 238);
+    background: linear-gradient(129deg,
+            rgb(5, 49, 119),
+            rgb(96, 3, 150));
+    background-size: 200%;
+    background-color: #7286A0;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+}
