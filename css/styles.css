@@ -110,6 +110,7 @@ a:hover {
     background-size: 200%;
     color: white;
     min-height: 400px;
+    margin-bottom: 60px;
 }
 
 .header h1 {
@@ -234,8 +235,20 @@ a:hover {
         margin-bottom: 10px;
     }
 
+    .boxLogo h2{
+        margin-bottom: 25px;
+    }
+    .boxLogo p {
+        margin-bottom: 25px;
+    }
+
     .buttom1 {
         margin-bottom: 10px;
+    }
+
+    .but2video {
+        margin-bottom: 20px;
+        justify-content: center;
     }
 }
 
@@ -318,9 +331,10 @@ a:hover {
 .mainbox {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
     align-items: center;
     text-align: center;
+    margin-bottom: 60px;
+    max-width: 600px;
 }
 
 .mainbox h2 {
@@ -330,13 +344,13 @@ a:hover {
 
 .mainbox p {
     font-size: 12px;
-    text-align: center;
+    text-align: center;    
 }
 
 .containerLogo {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .boxLogo {
@@ -356,7 +370,6 @@ a:hover {
     flex-direction: column;
     max-width: 1140px;
     margin: 0 auto;
-
 }
 
 .skills {
@@ -368,9 +381,9 @@ a:hover {
 }
 
 .icon-logo {
-    margin-top: 30px;
+    margin-top: 60px;
     display: flex;
-    margin-bottom: 0px;
+    margin-bottom: 60px;
 }
 
 .icon-logo .boxLogo {
@@ -396,6 +409,17 @@ a:hover {
     font-weight: bolder;
 }
 
+.p-for-max {
+    max-width: 500px;
+    }
+.mainbox p {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
+
 .pricing {
     font-size: 20px;
     font-weight: bolder;
@@ -404,8 +428,6 @@ a:hover {
 .price-display {
     display: flex;
     max-width: 1140px;
-    margin-top: 30px;
-    margin-bottom: 30px;
     align-items: center;
 }
 
