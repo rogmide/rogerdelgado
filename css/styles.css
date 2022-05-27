@@ -139,8 +139,6 @@ a:hover {
     flex: 1;
     background-color: white;
     color: black;
-    /* border-radius: 10px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.9); */
     margin: 20px 10px;
     padding: 15px 20px;
 }
@@ -183,11 +181,27 @@ a:hover {
 
     .icon-logo {
         margin-top: 60px;
-        display: flex;    
+        display: flex;
         margin-bottom: 60px;
         flex-wrap: wrap;
     }
 
+    .price-display {
+        margin-top: 60px;
+        display: flex;
+        margin-bottom: 60px;
+        flex-direction: column;
+    }
+
+    .price1{
+        margin-bottom: 15px;
+    }
+    .price2{
+        margin-bottom: 15px;
+    }
+    .price3{
+        margin-bottom: 15px;
+    }
     .logo {
         margin-bottom: 10px;
     }
@@ -219,7 +233,6 @@ a:hover {
 
 }
 
-/*  */
 .but1:hover {
     background: linear-gradient(124deg,
             rgb(74, 43, 119),
@@ -331,16 +344,16 @@ a:hover {
 }
 
 .icon-logo {
-    margin-top: 60px;
-    display: flex;    
-    margin-bottom: 60px;    
+    margin-top: 30px;
+    display: flex;
+    margin-bottom: 0px;
 }
 
-.icon-logo .boxLogo {    
+.icon-logo .boxLogo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;    
+    text-align: center;
 }
 
 .icon-logo h2 {
@@ -352,4 +365,67 @@ a:hover {
     width: 100px;
     max-width: 100%;
     max-height: 100%;
+}
+
+.mainbox .skills {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.pricing {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.price-display {
+    display: flex;
+    max-width: 1140px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.price1 {
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(22, 14, 86, 0.7);
+    width: 250px;
+    height: auto;
+    text-align: center;
+}
+
+.price2 {
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    background-color: rgb(66, 39, 151);
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+    color: white;
+    text-align: center;
+}
+
+.price3 {
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(22, 14, 86, 0.7);
+    width: 250px;
+    height: auto;
+    text-align: center;
+}
+
+.greyout {
+    color: grey;
+    opacity: 0.7;
+}
+
+.buttom2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.buttom-middle {
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
