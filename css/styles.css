@@ -200,12 +200,31 @@ a:hover {
     .my-dudes {
         margin-bottom: 60px;
     }
+}
 
-    .containerLogo .icon-logo {
+@media(max-width: 375px) {
+    .holder-back-color .container {
         margin-top: 60px;
         display: flex;
         margin-bottom: 60px;
         flex-wrap: wrap;
+    }
+
+    .my-dudes {
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width: 700px) {
+    .holder-back-color .container {
+        margin-top: 60px;
+        display: flex;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+    }
+
+    .containerRef {
+        max-width: fit-content;
     }
 }
 
@@ -219,6 +238,15 @@ a:hover {
 
     .my-dudes {
         margin-bottom: 60px;
+    }
+}
+
+@media(max-width: 700px) {
+    .icon-logo {
+        margin-top: 60px;
+        display: flex;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
     }
 }
 
