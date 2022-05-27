@@ -181,6 +181,13 @@ a:hover {
         text-align: center;
     }
 
+    .icon-logo {
+        margin-top: 60px;
+        display: flex;    
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+    }
+
     .logo {
         margin-bottom: 10px;
     }
@@ -325,21 +332,20 @@ a:hover {
 
 .icon-logo {
     margin-top: 60px;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 60px;
+    display: flex;    
+    margin-bottom: 60px;    
 }
 
 .icon-logo .boxLogo {    
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: center;    
 }
 
 .icon-logo h2 {
     margin-top: 5px;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;
 }
 
 .icon-logo img {
