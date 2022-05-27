@@ -532,6 +532,9 @@ footer {
             rgb(96, 3, 150));
     background-size: 200%;
     position: absolute;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .topcolor p {
@@ -551,6 +554,8 @@ footer {
     justify-content: end;
     width: 350px;
     height: 360px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(22, 14, 86, 0.7);
 }
 
 .bottomcolor h2 {
@@ -585,4 +590,27 @@ footer {
 .holder-back-color .container {
     display: flex;
     justify-content: space-around;
+}
+
+.but3 {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.butt3 {
+    height: 40px;
+    width: 120px;
+}
+
+.contactus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactimg {
+    margin-right: 150px;
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(22, 14, 86, 0.7);
 }
