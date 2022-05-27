@@ -803,3 +803,10 @@ footer .container {
     margin-bottom: 40px;
     border-bottom: 0.5px solid #9fa0a0;
 }
+
+.mainImg {
+    height: 350px;
+    width: 400px;
+    margin-right: 40px;
+}
+
