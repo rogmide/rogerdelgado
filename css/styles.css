@@ -251,6 +251,14 @@ a:hover {
 }
 
 @media(max-width: 600px) {
+    footer .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px) {
     .header .container {
         flex-direction: column;
         padding-top: 20px;
@@ -332,7 +340,8 @@ a:hover {
     outline: none;
     width: 80px;
     color: #fff;
-    height: 25px;
+    height: 35px;
+    width: 100px;
     background-color: rgb(154, 52, 238);
     background: linear-gradient(124deg,
             rgb(133, 51, 247),
@@ -341,7 +350,6 @@ a:hover {
     border-radius: 5px;
     cursor: pointer;
     opacity: 0.7;
-
 }
 
 .but1:hover {
@@ -495,9 +503,39 @@ p {
     font-size: 16px;
 }
 
-.pricing {
-    font-size: 20px;
+.price-display .price1 p {
+    padding: 3px;
+}
+
+.price-display .price2 p {
+    margin-top: 9px;
+    padding: 3px;
+}
+
+.price-display .price3 p {
+    padding: 3px;
+}
+
+.but2 {
+    background-color: white;
+    border: none;
+    outline: none;
+    width: 80px;
+    color: black;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
     font-weight: bolder;
+    margin-top: 14px;
+}
+
+.but2:hover {
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    opacity: 1;
 }
 
 .price-display {
@@ -511,19 +549,22 @@ p {
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(22, 14, 86, 0.7);
     width: 250px;
-    height: auto;
+    height: 340px;
     text-align: center;
 }
 
+.price2 .skills {
+    color: white;
+}
+
 .price2 {
-    color: black;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     background-color: rgb(66, 39, 151);
     margin-left: 20px;
     margin-right: 20px;
     width: 300px;
-    height: 300px;
+    height: 420px;
     color: white;
     text-align: center;
 }
@@ -533,7 +574,7 @@ p {
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(22, 14, 86, 0.7);
     width: 250px;
-    height: auto;
+    height: 340px;
     text-align: center;
 }
 
@@ -548,7 +589,7 @@ p {
 }
 
 .buttom-middle {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
@@ -565,7 +606,7 @@ p {
     display: flex;
     margin-top: 60px;
     margin-bottom: 60px;
-    padding: 30px;
+    padding: 80px;
 }
 
 .topcolor {
@@ -585,9 +626,9 @@ p {
 .topcolor p {
     text-align: center;
     color: white;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-weight: lighter;
     font-size: 14px;
 }
@@ -620,6 +661,7 @@ p {
 }
 
 .star-ref {
+    margin-top: 15px;
     color: #fe9c0b;
     margin-bottom: 0;
 }
@@ -694,7 +736,7 @@ footer .container {
 }
 
 .plogo {
-    font-size: 10px;
+    font-size: 15px;
     max-width: 200px;
     margin-bottom: 20px;
 }
@@ -722,26 +764,19 @@ footer .container {
 }
 
 footer {
-    padding: 20px 0;
+    padding: 40px 0;
     position: relative;
     background-image: url('https://images.unsplash.com/photo-1653662835145-f1f82ffc798e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
     background-size: cover;
     background-color: rgba(23, 25, 40, 0.9);
     text-align: center;
-    color: white;
+    color: #9fa0a0;
     margin-bottom: 0px;
-
 }
 
 footer .container {
     position: relative;
     z-index: 2;
-}
-
-.container .main-copy-r {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
 }
 
 .stiloback {
@@ -753,4 +788,18 @@ footer .container {
     background-color: rgba(23, 25, 40, 1);
     opacity: 0.9;
     z-index: 1;
+}
+
+.container .main-copy-r {    
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .top-border-footer {
+    display: flex;
+    flex-grow: 1; 
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #9fa0a0;
 }
