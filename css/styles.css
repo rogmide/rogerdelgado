@@ -176,12 +176,18 @@ a:hover {
         margin-bottom: 15px;
     }
 
+    .container .contactus{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
     .contactus {
         margin-top: 60px;
         display: flex;
-
         margin-bottom: 60px;
-        flex-wrap: wrap;
+        flex-wrap: wrap;        
     }
 
     .contactimg {
@@ -206,8 +212,8 @@ a:hover {
     .holder-back-color .container {
         margin-top: 60px;
         margin-bottom: 60px;
-        display: flex;        
-        flex-wrap: wrap;        
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .my-dudes {
@@ -719,10 +725,11 @@ p {
 
 .contactimg {
     height: 250px;
-    width: auto;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(22, 14, 86, 0.7);
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .logdiv {
@@ -826,4 +833,10 @@ footer .container {
     height: 350px;
     width: 400px;
     margin-right: 40px;
+}
+
+.mainBox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
