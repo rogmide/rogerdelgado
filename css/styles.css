@@ -176,7 +176,7 @@ a:hover {
         margin-bottom: 15px;
     }
 
-    .container .contactus{
+    .container .contactus {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -187,7 +187,7 @@ a:hover {
         margin-top: 60px;
         display: flex;
         margin-bottom: 60px;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
     }
 
     .contactimg {
@@ -393,7 +393,7 @@ a:hover {
 
 .but2video {
     display: flex;
-    margin-top: 20px;
+
     align-items: center;
 }
 
@@ -554,6 +554,7 @@ p {
     opacity: 0.9;
     font-weight: bolder;
     margin-top: 14px;
+    margin-bottom: 15px;
 }
 
 .but2:hover {
@@ -839,4 +840,11 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.boxLogo p {
+    font-size: 12px;
+}
+.boxLogo h2{
+    margin-top: 17px;
 }
