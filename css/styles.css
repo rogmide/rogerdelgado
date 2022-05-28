@@ -205,9 +205,9 @@ a:hover {
 @media(max-width: 375px) {
     .holder-back-color .container {
         margin-top: 60px;
-        display: flex;
         margin-bottom: 60px;
-        flex-wrap: wrap;
+        display: flex;        
+        flex-wrap: wrap;        
     }
 
     .my-dudes {
@@ -222,10 +222,6 @@ a:hover {
         margin-bottom: 60px;
         flex-wrap: wrap;
     }
-
-    .containerRef {
-        max-width: fit-content;
-    }
 }
 
 @media(max-width: 1070px) {
@@ -238,6 +234,22 @@ a:hover {
 
     .my-dudes {
         margin-bottom: 60px;
+    }
+
+    .ppricing {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .containerLogo {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .containerLogo img {
+        margin-top: 40px;
+
     }
 }
 
@@ -267,6 +279,17 @@ a:hover {
 
     .boxes .container {
         text-align: center;
+    }
+
+    .containerLogo {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .containerLogo img {
+        margin-top: 40px;
+
     }
 
     .navbar .container {
@@ -370,10 +393,6 @@ a:hover {
 
 .but2video h3 {
     align-items: center;
-}
-
-.but2 {
-    margin-right: 20px;
 }
 
 .IconPlayVideo {
@@ -604,9 +623,9 @@ p {
     background: rgb(255, 231, 231);
     background: linear-gradient(90deg, rgba(255, 231, 231, 1) 0%, rgba(213, 248, 255, 1) 100%);
     display: flex;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: space-around;
 }
 
 .topcolor {
@@ -743,7 +762,6 @@ footer .container {
 
 .nav1 {
     text-align: left;
-    margin-left: 25px;
 }
 
 .nav1 a {
@@ -790,7 +808,7 @@ footer .container {
     z-index: 1;
 }
 
-.container .main-copy-r {    
+.container .main-copy-r {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -798,7 +816,7 @@ footer .container {
 
 .container .top-border-footer {
     display: flex;
-    flex-grow: 1; 
+    flex-grow: 1;
     margin-top: 40px;
     margin-bottom: 40px;
     border-bottom: 0.5px solid #9fa0a0;
@@ -809,4 +827,3 @@ footer .container {
     width: 400px;
     margin-right: 40px;
 }
-
