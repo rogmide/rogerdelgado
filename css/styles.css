@@ -520,6 +520,10 @@ a:hover {
     max-width: 500px;
 }
 
+.p-for-max p {
+    margin-bottom: 40px;
+}
+
 .mainbox p {
     font-size: 16px;
 }
@@ -845,6 +849,7 @@ footer .container {
 .boxLogo p {
     font-size: 12px;
 }
-.boxLogo h2{
+
+.boxLogo h2 {
     margin-top: 17px;
 }
