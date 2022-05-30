@@ -57,13 +57,34 @@ body {
     }
 }
 
-@media (min-width: 750px) {
-    .container .maincontent {
+@media (max-width: 750px) {
+    .maincontent {
         max-width: 750px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+    }
+
+    .pic-base {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botfloor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav li {
+        margin-left: 0px;
     }
 }
+
 
 .demos {
     height: auto;
