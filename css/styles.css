@@ -59,7 +59,7 @@ body {
 
 .demos {
     height: auto;
-    width: 150px;
+    width: auto;
 }
 
 .container {
@@ -89,20 +89,97 @@ body {
 
 .backimg {
     padding-top: 60px;
-
     text-align: center;
-    opacity: 1;
     margin-bottom: 0px;
 }
 
+.titletop {
+    flex-grow: 1;
+    max-width: auto;
+    padding-top: 62px;
+    padding-bottom: 50px;
+}
+
+.top-title {
+    color: white;
+    font-weight: lighter;
+    font-size: 30px;
+    width: auto;
+    text-align: left;
+    background: rgb(122, 54, 219);
+    background: linear-gradient(90deg, rgba(122, 54, 219, 0.5) 0%, rgba(167, 62, 255, 0) 100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.push-right {
+    margin-left: 20px;
+}
+
 .demo {
-    height: 620px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
     width: 300px;
     z-index: 2;
 }
 
 .maincontent {
     display: flex;
+    justify-content: space-between;
+}
+
+.pic-project {
+    margin-left: 17%;
+    width: 190px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.link-look {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgba(17, 55, 58, 0.75);
+    font-weight: bolder;
+    position: relative;
+    padding-left: 5px;
+}
+
+.link-look::before {
+    content: '';
+    background-color: hsla(184, 87%, 52%, .75);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 3px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.link-look:hover::before {
+    bottom: 0;
+    height: 100%;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.descriction-project {
+    color: white;
+    background: rgb(122, 54, 219);
+    background: linear-gradient(90deg, rgba(122, 54, 219, 0.5) 0%, rgba(167, 62, 255, 7) 100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 2px;
+    padding-left: 5px;
 }
 
 .pic-base {
@@ -186,8 +263,7 @@ footer {
 }
 
 .copyright {
-    padding-left: 20px;
-    padding-right: 20px;
+
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
@@ -208,8 +284,9 @@ footer {
     list-style: none;
     color: white;
 }
+
 .nav1 a {
-    color: white;    
+    color: white;
     text-decoration: none;
     font-size: 15px;
     transition: all 0.3s ease-in-out;
@@ -225,9 +302,10 @@ footer {
     font-size: 12px;
 }
 
-.botfloor {
+.container .botfloor {
     display: flex;
     justify-content: space-between;
+
 }
 
 .logoh2,
@@ -238,7 +316,7 @@ footer {
     color: white;
 }
 
-.plogo {    
+.plogo {
     max-width: 400px;
 }
 
@@ -246,9 +324,24 @@ footer {
     margin-top: 20px;
     font-size: 20px;
     color: white;
+    margin-left: 34px;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
 
+}
 
+.nav li {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 30px;
+}
 
-
+.myiconbot {
+    width: 25px;
+    height: 25px;
+}
