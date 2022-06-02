@@ -131,6 +131,7 @@ body {
 }
 
 .top-title {
+    padding-left: 10px;
     color: white;
     font-weight: lighter;
     font-size: 30px;
