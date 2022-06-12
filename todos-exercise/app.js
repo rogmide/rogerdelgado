@@ -55,6 +55,7 @@ try {
 
     if (checking.children.length >= 1) {
         addSome2.setAttribute('hidden', true);
+
     } else {
         addSome2.removeAttribute('hidden');
     }
@@ -134,6 +135,9 @@ formAddTodo.addEventListener('click', function (e) {
             saveToLocalStore();
         } else {
             newAlert.removeAttribute('hidden');
+            setTimeout(() => {
+                newAlert.setAttribute('hidden', true);
+            }, 3000);
         }
     }
 });
@@ -147,6 +151,9 @@ newItem.addEventListener('keypress', function (e) {
         const newP = document.createElement('p');
         if (newTodo.value === '') {
             newAlert.removeAttribute('hidden');
+            setTimeout(() => {
+                newAlert.setAttribute('hidden', true);
+            }, 3000);
             return '';
         }
         newP.innerText = newTodo.value;

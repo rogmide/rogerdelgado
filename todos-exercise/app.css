@@ -79,7 +79,7 @@ footer {
 }
 
 .order-list {
-    max-height: 82vh;
+    max-height: calc(100vh - 125px);
     max-width: 50%;
     font-size: 20px;
     overflow-y: auto;
@@ -110,6 +110,7 @@ footer {
 .item-list {
     padding-top: 5px;    
     margin-top: 10px;
+    margin-right: 5px;
     margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -200,15 +201,17 @@ input[type="text"] {
 }
 
 .alert {
-    max-width: 150px;
-    margin-bottom: 5px;
+    max-width: 150px;    
     padding-left: 10px;
     font-size: 20px;
     margin-top: 0px;
     border: 1px solid white;
-    border-bottom: none;
-    border-left: none;
+    border-bottom: none;    
     border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     color: white;
     font-weight: bolder;
+    transition: all 1s;
+    background-color: rgba(30, 26, 59, 0.8);
+    
 }
