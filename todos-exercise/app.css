@@ -117,6 +117,7 @@ footer {
     background-color: #3f3365;
     border-radius: 10px;
     list-style: none;
+    cursor: pointer;
 }
 
 .item-list:hover {
@@ -143,6 +144,7 @@ footer {
 
 .scratch p {
     text-decoration: line-through;
+    cursor: pointer;
 }
 
 .add-todo {
