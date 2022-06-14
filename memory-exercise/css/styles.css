@@ -1,0 +1,251 @@
+/* body {
+
+} */
+
+* {
+    font-family: Karla;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: calc(1em + 0.5vw);
+    background: rgb(179, 184, 144);
+    background: linear-gradient(180deg, rgba(179, 184, 144, 1) 0%, rgba(145, 146, 117, 1) 16%, rgba(129, 128, 105, 1) 44%, rgba(112, 109, 92, 1) 66%, rgba(91, 85, 75, 1) 83%, rgba(69, 60, 58, 1) 100%);
+
+    background-attachment: fixed;
+}
+
+body {
+    color: white;
+    font-size: 0.6em;
+    line-height: 1.5;
+    position: relative;
+    margin: 0;
+    height: 100vh;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: 90vw;
+    width: 100%;
+}
+
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+@media (min-width: 993px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 700px;
+    background-color: #757260;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.upper-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #757260;
+    width: 800px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.card-holder {
+    margin: 5px;
+    background-color: #557b83;
+    width: 190px;
+    height: 223px;
+    border-radius: 5px;
+}
+
+.card-img {
+    display: flex;
+    margin-left: 2px;
+    margin-top: 2px;
+    height: 98%;
+    width: 98%;
+    background-color: #463e3d4e;
+    border-radius: 5px;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    transition: all 2s;
+}
+
+img {
+    position: relative;
+    width: 98%;
+    height: 98%;
+}
+
+#mage {
+    background-image: url('../img/mage.png');
+    background-size: cover;
+    background-position-x: center;
+}
+
+#dk {
+    background-image: url('../img/dk.png');
+    background-size: cover;
+    background-position-x: center;
+}
+
+#paly {
+    background-image: url('../img/paly.png');
+    background-size: cover;
+    background-position-x: center;
+}
+
+#priest {
+    background-image: url('../img/pri.png');
+    background-size: cover;
+    background-position-x: center;
+}
+
+#shaman {
+    background-image: url('../img/sha.png');
+    background-size: cover;
+    background-position-x: center;
+}
+
+#warlock {
+    background-image: url('../img/warl.png');
+    background-size: cover;
+    background-position-x: center;
+}
+
+.card-holder:hover {
+    background-color: #8d8e72;
+}
+
+.game-container #i1 { order: 1; }
+.game-container #i2 { order: 2; }
+.game-container #i3 { order: 3; }
+.game-container #i4 { order: 4; }
+.game-container #i5 { order: 5; }
+.game-container #i6 { order: 6; }
+.game-container #i7 { order: 7; }
+.game-container #i8 { order: 8; }
+.game-container #i9 { order: 9; }
+.game-container #i10 { order: 10; }
+.game-container #i11 { order: 11; }
+.game-container #i12 { order: 12; }
+
+
+
+@keyframes reveal {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    18% {
+        opacity: 0.2;
+    }
+
+    33% {
+        opacity: 0.5;
+    }
+
+    66% {
+        opacity: 0.8;
+    }
+}
+
+.match {
+    opacity: 1;
+}
+
+.stay {
+    animation: reveal 2s;
+    opacity: 1;
+}
+
+.upper-container {
+    display: flex;
+}
+
+.top-header {
+    margin-left: 10px;
+    width: 253px;
+}
+
+.winner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.style-winner {
+    padding-top: 10%;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+button {
+    background-color: #6c757d;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover {    
+    background-color: #8d98a1;
+}
+
+.right-side {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.right {
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.btn-new-game {
+    margin-bottom: 10px;
+}
