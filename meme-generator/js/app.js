@@ -7,7 +7,7 @@ const valid = document.querySelector('.valid');
 
 btnSubmit.addEventListener('click', function (e) {
     e.preventDefault();
-    if (imgUrl.value === "") {
+    if (!isValidHttpUrl(imgUrl.value)) {
         valid.removeAttribute('hidden');
     } else {
         valid.setAttribute('hidden', true);
@@ -44,3 +44,14 @@ btnSubmit.addEventListener('click', function (e) {
     }
 });
 
+function isValidHttpUrl(string) {
+    let url;
+    
+    try {
+      url = new URL(string);
+    } catch (_) {
+      return false;  
+    }
+  
+    return url.protocol === "http:" || url.protocol === "https:";
+  }

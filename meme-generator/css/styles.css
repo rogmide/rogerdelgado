@@ -130,8 +130,7 @@ input {
 }
 
 .memes-holder {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex;    
     flex-wrap: wrap;
     margin-top: 20px;
     border-top: 1px solid #e3b69c;
@@ -169,7 +168,7 @@ h2 {
     text-align: center;
     margin: 10px;
     height: 300px;
-    width: 220px;
+    width: calc(20% - 20px);
     background-color: #e3b69c;
     border-radius: 10px;
 }
