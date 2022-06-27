@@ -33,7 +33,7 @@ function makeHtmlBoard() {
   // Add event listener to the top header
   let top = document.createElement("tr");
   top.setAttribute("id", "column-top");
-  top.addEventListener("click", handleClick);  
+  top.addEventListener("click", handleClick);
 
   // Create the top of the board
   for (let x = 0; x < WIDTH; x++) {
@@ -111,7 +111,16 @@ function handleClick(evt) {
 
   //check for win
   if (checkForWin()) {
-    return endGame(`Player ${currPlayer} won!`);
+    const top = document.querySelector('#column-top');
+    top.removeEventListener('click', handleClick);
+    setTimeout(() => {
+      return endGame(`Player ${currPlayer} won!`);
+    }, 700);
+    // This Return is to stop the game for keeping going 
+    // Other Wise will Run 
+    // currPlayer === 'blue' ? currPlayer = 'red' : currPlayer = 'blue';
+    // and change the winner
+    return
   }
 
   // check for tie
@@ -190,7 +199,7 @@ function checkForWin() {
   // horiz vert, diagDR, diagDL 
   // Pass the Array to the _win() in order to check for the winner
   // This is run all the board checking for winning situation
-  
+
   for (let y = 0; y < HEIGHT; y++) {
     for (let x = 0; x < WIDTH; x++) {
 
@@ -198,7 +207,7 @@ function checkForWin() {
       let vert = [[y, x], [y + 1, x], [y + 2, x], [y + 3, x]];
       let diagDR = [[y, x], [y + 1, x + 1], [y + 2, x + 2], [y + 3, x + 3]];
       let diagDL = [[y, x], [y + 1, x - 1], [y + 2, x - 2], [y + 3, x - 3]];
-      
+
       if (_win(horiz) || _win(vert) || _win(diagDR) || _win(diagDL)) {
         return true;
       }
