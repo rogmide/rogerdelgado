@@ -1,0 +1,154 @@
+/* game board table */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: calc(1em + 0.5vw);
+  background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-size: 0.6em;
+  line-height: 1.5;
+  position: relative;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90vw;
+  width: 100%;
+}
+
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+@media (min-width: 993px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+#board {
+  overflow: hidden;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 0;
+}
+
+#board td {
+  justify-content: center;
+  width: 75px;
+  height: 75px;  
+  border-radius: 50%;
+  background-color: #e0e6e7;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+#game {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+  border-bottom: none;
+  transform: translateY(-2px);
+}
+
+#column-top td:hover {
+  background-image: url('transparent-web-icon-menu-icon-down-arrow-icon-5fcee861e0bf77.9194388716073954259206.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;  
+  cursor: pointer;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(var(--Height));
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+/* TODO: make into circles */
+.blue {
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 10px 0px inset;
+  animation: movedown 1s;
+  animation-fill-mode: forwards;
+  background-color: blue;
+  margin: 5px;
+  width: 75%;
+  height: 75%;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+.red {
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 10px 0px inset;
+  animation: movedown 1s;
+  animation-fill-mode: forwards;
+  background-color: red;
+  margin: 5px;
+  width: 75%;
+  height: 75%;
+  border-radius: 100%;
+  margin-left: 9px;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  opacity: 0.5;
+  color: white;
+}
