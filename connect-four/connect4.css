@@ -79,6 +79,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-top: 100px;
+  max-width: 50%;
 }
 
 .piece {
@@ -164,8 +165,12 @@ body {
 }
 
 .photo {
-  display: flex;
-  justify-content: center;
+  display: flex;  
   opacity: 0.5;
   color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }
