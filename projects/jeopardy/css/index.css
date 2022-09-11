@@ -1,0 +1,205 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: calc(1em + 0.5vw);
+}
+
+body {
+    background-color: #12151d;
+    color: #e9e8eb;
+    font-size: 0.6em;
+    line-height: 1.5;
+    position: relative;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 90vw;
+    width: 100%;
+}
+
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+@media (min-width: 993px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+.modal-content {
+    background-color: #161924;
+}
+
+.modal-header {
+    border-color: #3d4048;
+}
+
+.modal-footer {
+    border-color: #3d4048;
+}
+
+.team {
+    width: 180px;
+    height: 140px;
+    background-color: #161924;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-shadow: #e9e8eb 0 2px 2px;
+}
+
+.teams {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: fit-content;
+    margin-left: 0;
+}
+
+img {
+    height: 50%;
+}
+
+.team-form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-new-game {
+    height: auto;
+    font-size: 15px;
+    width: fit-content;
+}
+
+.input-2 {
+    height: auto;
+    font-size: 15px;
+    width: fit-content;
+}
+
+label {
+    font-weight: bolder;
+    padding-top: 10px;
+    width: 200px;
+    margin-right: 10px;
+    height: auto;
+    font-size: 15px;
+    text-align: end;
+}
+
+.point {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.btn-add {
+    color: #fa6c71;
+}
+
+.btn-take {
+    color: #fa6c71;
+}
+
+h5 {
+    font-size: 8px;
+}
+
+.point {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.game-board {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 80px;
+    box-shadow: #e9e8eb 0 2px 2px;
+    background-color: #161924;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.card:hover {
+    background-color: #3b445c;
+    cursor: pointer;
+}
+
+.card-done {
+    opacity: 0.1;
+    box-shadow: #e9e8eb 0 0.5px 0.5px;
+}
+
+.card-done:hover {
+    opacity: 0.1;
+    background-color: #3d4048;
+    box-shadow: none;
+}
+
+.colum-holder {
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h4 {
+    display: flex;
+    font-size: 15px;
+    font-weight: bolder;
+    min-height: 35px;
+    justify-content: center;    
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    color: gold;
+}
+
+h3:hover {
+    cursor: pointer;
+}
+
+.question {
+    font-size: 25px;
+}
