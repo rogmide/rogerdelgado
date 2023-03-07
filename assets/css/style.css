@@ -6,6 +6,14 @@ body {
   color: #272829;
 }
 
+body p {
+  font-size: 22px;
+}
+
+body li {
+  font-size: 22px;
+}
+
 a {
   color: #0563bb;
   text-decoration: none;
@@ -1244,4 +1252,8 @@ section {
   width: 100%;
   border-radius: 20px;
   box-shadow: 2px 2px #888888;
+}
+
+.services .icon-box p {
+  font-size: 18px;
 }
